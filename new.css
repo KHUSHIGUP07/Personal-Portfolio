@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    background: white;
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #ff5722;
+    color: white;
+}
+
+/* Sections */
+.large-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.skill-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Projects */
+.projects .project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 500px;
+    transition: 0.3s;
+}
+
+.projects .project:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonial {
+    background: #ff5722;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px auto;
+    max-width: 500px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background: #111;
+}
+
+.dark-mode .projects .project {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .skill {
+    background: #555;
+}
